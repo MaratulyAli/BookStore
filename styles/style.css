@@ -1,0 +1,114 @@
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  margin: 0;
+}
+#main_logo {
+  width: 200px;
+}
+header#header_with_search_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  position: relative;
+}
+#search {
+  height: 40px;
+  width: 700px;
+  border: 0px solid gray;
+  border-radius: 5px 0px 0px 5px;
+  padding: 10px;
+  font-size: x-large;
+}
+#search_bar_and_logo {
+  display: flex;
+  align-items: center;
+}
+#search_logo {
+  padding: 1vw;
+  padding-bottom: 0.95vw;
+  border: 0px solid gray;
+  border-radius: 0px 5px 5px 0px;
+  /* background: rgb(0, 255, 209); */
+  background: linear-gradient(
+    70deg,
+    rgba(0, 255, 209, 1) 24%,
+    rgba(71, 127, 255, 1) 100%
+  );
+}
+#shopping_cart {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 5vw;
+}
+#shopping_cart p {
+  margin: 5px;
+  color: white;
+  font-weight: bold;
+}
+#shopping_cart div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1vw;
+}
+nav#navbar {
+  display: flex;
+  align-items: center;
+  background: black;
+  justify-content: space-around;
+}
+nav#navbar p {
+    font-size: large;
+}
+nav#navbar a {
+    color: white;
+    text-decoration: none;
+}
+nav#navbar a#home::after {
+    content: '';
+    display: block;
+    margin-top: 10px;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(
+        70deg,
+        rgba(0, 255, 209, 1) 24%,
+        rgba(71, 127, 255, 1) 100%
+    );
+}
+nav#navbar a::after {
+    content: '';
+    display: block;
+    margin-top: 10px;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(
+        70deg,
+        rgba(0, 255, 209, 1) 24%,
+        rgba(71, 127, 255, 1) 100%
+        );
+    transition: width 0.4s ease-in-out;
+}
+nav#navbar a:hover::after {
+    width: 100%;
+}
+h2 {
+    margin: 3vw 5vw;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+}
+.genre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.genre img {
+    border-radius: 100px;
+    box-shadow: 0px 2px 41px 1px rgba(0,0,0,0.2);
+    /* border: 1px solid rgb(184, 185, 185); */
+}
