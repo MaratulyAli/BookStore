@@ -66,6 +66,9 @@ header#header_with_search_bar {
   );
   border-image-slice: 1;
 }
+#sign_in:hover {
+  cursor: pointer;
+}
 @-webkit-keyframes hue {
   from {
     -webkit-filter: hue-rotate(0deg);
@@ -96,6 +99,7 @@ nav#navbar {
   align-items: center;
   background: black;
   justify-content: space-around;
+  box-shadow: 1px 1px 30px 2px rgba(0, 0, 0, 0.733);
 }
 nav#navbar p {
   font-size: large;
@@ -135,9 +139,14 @@ nav#navbar a:hover::after {
 h2 {
   margin: 3vw 5vw;
 }
-main {
+#genres {
   display: flex;
   justify-content: space-around;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 5vh 2vw;
+  padding-top: 2vh;
+  border-bottom: 1px solid rgb(223, 221, 221);
 }
 .genre {
   display: flex;
@@ -147,5 +156,25 @@ main {
 .genre img {
   border-radius: 100px;
   box-shadow: 0px 2px 41px 1px rgba(0, 0, 0, 0.2);
-  /* border: 1px solid rgb(184, 185, 185); */
+}
+#main_content {
+  display: flex;
+}
+#side_bar {
+  padding: 1vw;
+  border-right: 1px solid rgb(223, 221, 221);
+}
+.price_input {
+  height: 20px;
+  width: 45px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+}
+#price_div button {
+  height: 32px;
+  width: 50px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
 }
