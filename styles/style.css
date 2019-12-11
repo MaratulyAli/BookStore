@@ -178,3 +178,65 @@ h2 {
   border-radius: 5px;
   padding: 5px;
 }
+#books_list {
+  display: flex;
+
+}
+.item {
+  width: 200px;
+  max-height: 715px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 15px;
+  margin: 15px 20px;
+  /* border: 1px solid rgb(187, 187, 187); */
+  border-radius: 10px;
+}
+.item .image {
+  width: 200px;
+  height: 280px;
+}
+.item .title {
+  margin: 5px;
+  margin-top: 0;
+}
+.item .book_ratings {
+  width: 120px;
+}
+.item .discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 10px;
+  top: 270px;
+  background: deeppink;
+  color: white;
+  width: 70px;
+  height: 30px;
+  border-radius: 4px;
+}
+.item .price {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-indent: 5px;
+}
+.item .add_to_cart {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 5px;
+  margin-top: 20px;
+  background-image: linear-gradient(
+    70deg,
+    rgba(0, 255, 209, 1) 24%,
+    rgba(71, 127, 255, 1) 100%
+  );
+  color: #000;
+  cursor: pointer;
+}
+
