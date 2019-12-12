@@ -27,11 +27,8 @@ header#header_with_search_bar {
   align-items: center;
 }
 #search_logo {
-  padding: 1vw;
-  padding-bottom: 0.95vw;
-  border: 0px solid gray;
+  padding: 15px;  
   border-radius: 0px 5px 5px 0px;
-  /* background: rgb(0, 255, 209); */
   background: linear-gradient(
     70deg,
     rgba(0, 255, 209, 1) 24%,
@@ -230,7 +227,6 @@ h2 {
   padding: 10px;
   border: 1px solid rgb(197, 197, 197);
   border-radius: 5px;
-  /* margin-top: 20px; */
   background-image: linear-gradient(
     70deg,
     rgba(0, 255, 209, 1) 24%,
@@ -261,12 +257,29 @@ h2 {
   background: rgb(109, 109, 109);
 }
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px;
   background: rgb(0, 0, 0);
   color: white;
+  
+}
+footer div {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+footer table {
+  
+}
+footer table td {
+  color: white;
+}
+footer table th, td {
+  /* display: inline-block; */
+  /* margin: 10px; */
+  padding: 5px;
 }
 footer #switch_lang {
   width: 100px;
@@ -275,5 +288,9 @@ footer #switch_lang {
   background: #000;
   border: 1px solid white;
   border-radius: 5px;
+}
+footer p {
+  font-weight: bold;
+  text-align: center;
 }
 
