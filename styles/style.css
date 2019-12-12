@@ -184,8 +184,9 @@ h2 {
 }
 .item {
   width: 200px;
-  max-height: 715px;
+  max-height: 505px;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   position: relative;
   padding: 15px;
@@ -229,15 +230,23 @@ h2 {
   padding: 10px;
   border: 1px solid rgb(197, 197, 197);
   border-radius: 5px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   background-image: linear-gradient(
     70deg,
-    rgb(0, 199, 162) 24%,
-    rgb(56, 95, 187) 100%
+    rgba(0, 255, 209, 1) 24%,
+    rgba(71, 127, 255, 1) 100%
   );
   color: #000;
   cursor: pointer;
 }
+.item .add_to_cart:hover {
+
+  background-image: linear-gradient(
+    70deg,
+    rgb(0, 216, 176) 24%,
+    rgb(63, 108, 212) 100%
+    );
+  }
 #back_to_top {
   background: rgb(78, 78, 78);
   width: 100%;
