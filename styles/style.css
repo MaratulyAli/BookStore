@@ -180,7 +180,7 @@ h2 {
 }
 #books_list {
   display: flex;
-
+  flex-wrap: wrap;
 }
 .item {
   width: 200px;
@@ -189,8 +189,7 @@ h2 {
   flex-direction: column;
   position: relative;
   padding: 15px;
-  margin: 15px 20px;
-  /* border: 1px solid rgb(187, 187, 187); */
+  margin: 15px 8px;
   border-radius: 10px;
 }
 .item .image {
@@ -233,10 +232,39 @@ h2 {
   margin-top: 20px;
   background-image: linear-gradient(
     70deg,
-    rgba(0, 255, 209, 1) 24%,
-    rgba(71, 127, 255, 1) 100%
+    rgb(0, 199, 162) 24%,
+    rgb(56, 95, 187) 100%
   );
   color: #000;
   cursor: pointer;
+}
+#back_to_top {
+  background: rgb(78, 78, 78);
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  cursor: pointer;
+}
+#back_to_top:hover {
+  background: rgb(109, 109, 109);
+}
+footer {
+  background: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+footer #switch_lang {
+  width: 100px;
+  height: 50px;
+  color: white;
+  background: #000;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 

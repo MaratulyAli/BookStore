@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap"
       rel="stylesheet"
     />
+
+    <script defer>
+      function backToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </head>
   <body>
     <header id="header_with_search_bar">
@@ -192,6 +199,13 @@
         </div>
       </main>
     </article>
-    
+
+    <div id="back_to_top" onclick="backToTop()">Back to top</div>
+    <footer>
+      <select name="lang" id="switch_lang">
+        <option value="EN">English</option>
+        <option value="RU">Russian</option>
+      </select>
+    </footer>
   </body>
 </html>
