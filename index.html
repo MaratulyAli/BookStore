@@ -11,12 +11,7 @@
       rel="stylesheet"
     />
 
-    <script defer>
-      function backToTop() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
+    <script src="js/home_page.js" defer></script>
   </head>
   <body>
     <header id="header_with_search_bar">
@@ -54,31 +49,31 @@
     <main id="genres">
       <div class="genre">
         <img src="images/genres/fiction.jfif" width="120px" height="120px" />
-        <p>Literature &amp; Fiction</p>
+        <p><a href="">Literature &amp; Fiction</a></p>
       </div>
       <div class="genre">
         <img src="images/genres/heart.png" width="120px" height="120px" />
-        <p>Romance</p>
+        <p><a href="">Romance</a></p>
       </div>
       <div class="genre">
         <img src="images/genres/dollar.png" width="120px" height="120px" />
-        <p>Business books</p>
+        <p><a href="">Business books</a></p>
       </div>
       <div class="genre">
         <img src="images/genres/children.png" width="120px" height="120px" />
-        <p>Children</p>
+        <p><a href="">Children</a></p>
       </div>
       <div class="genre">
         <img src="images/genres/dragon.png" width="120px" height="120px" />
-        <p>Fantasy</p>
+        <p><a href="">Fantasy</a></p>
       </div>
       <div class="genre">
         <img src="images/genres/textbooks.jfif" width="120px" height="120px" />
-        <p>Textbooks</p>
+        <p><a href="">Textbooks</a></p>
       </div>
       <div class="genre">
         <img src="images/genres/Auezov.jfif" width="120px" height="120px" />
-        <p>Kazakh books</p>
+        <p><a href="">Kazakh books</a></p>
       </div>
     </main>
 
@@ -191,17 +186,16 @@
             <p class="price">$99.9</p>
             <p class="title">Forrest Gump</p>
             <img src="images/stars/4st.jfif" alt="" class="book_ratings" />
-            <p class="discount">-20%</p>
           </div>
           <button class="add_to_cart">Add to Cart</button>
         </div>
         <div class="item">
           <div>
             <img src="images/business/7_habits.jfif" class="image" />
-            <p class="price">$99.9</p>
+            <p class="price with_discount">$99.9</p>
             <p class="title">7 Habits of Highly effective People</p>
             <img src="images/stars/5st.jfif" alt="" class="book_ratings" />
-            <p class="discount">-20%</p>
+            <p class="discount">-10%</p>
           </div>
           <button class="add_to_cart">Add to Cart</button>
         </div>
@@ -211,28 +205,41 @@
     <div id="back_to_top" onclick="backToTop()">Back to top</div>
     <footer>
       <div>
-
         <table>
           <tr>
             <th>About us</th>
             <th>Contact us</th>
           </tr>
           <tr>
-            <td><a href="https://github.com/MaratulyAli/WebProject">My GitHub</a></td>
-            <td><a href="https://www.facebook.com/profile.php?id=100012186792129">Facebook</a></td>
+            <td>
+              <a
+                href="https://github.com/MaratulyAli/WebProject"
+                target="_blank"
+                >My GitHub</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://www.facebook.com/profile.php?id=100012186792129"
+                target="_blank"
+                >Facebook</a
+              >
+            </td>
           </tr>
           <tr>
             <td></td>
-            <td><a href="https://t.me/maratuly_ali">Telegram</a></td>
+            <td>
+              <a href="https://t.me/maratuly_ali" target="_blank">Telegram</a>
+            </td>
           </tr>
         </table>
-        
+
         <select name="lang" id="switch_lang">
           <option value="EN">English</option>
           <option value="RU">Russian</option>
         </select>
       </div>
-      <p>&copy; 2019. All rights are not reserved.</p>
+      <p>&copy; SDU 2019. All rights are not reserved.</p>
     </footer>
   </body>
 </html>
