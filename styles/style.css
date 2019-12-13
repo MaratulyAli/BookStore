@@ -4,6 +4,7 @@
 body {
   margin: 0;
 }
+a {text-decoration: none;}
 #main_logo {
   width: 200px;
 }
@@ -273,17 +274,13 @@ footer div {
   justify-content: space-around;
   align-items: flex-start;
 }
-footer table {
-  
-}
 footer table td {
   color: white;
 }
 footer table th, td {
-  padding: 5px;
+  padding: 10px;
 }
 footer table th, td a {
-  text-decoration: none;
   color: white;
 }
 footer #switch_lang {
