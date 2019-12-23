@@ -14,6 +14,7 @@ header#header_with_search_bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   background: black;
   position: relative;
 }
@@ -205,6 +206,9 @@ h2 {
 .item .book_ratings {
   width: 120px;
 }
+.item .description {
+  width: 50vw;
+}
 .item .discount {
   display: flex;
   align-items: center;
@@ -291,4 +295,12 @@ footer #switch_lang {
 footer p {
   font-weight: bold;
   text-align: center;
+}
+@media only screen and (max-width: 500px) {
+  .genre img {
+    display: none;
+  }
+  #shopping_cart {
+    right: 0;
+  }
 }

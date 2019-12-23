@@ -65,3 +65,49 @@ nav {
 article {
     padding: 10px;
 }
+.user {
+    padding: 5px;
+    border-bottom: 2px solid grey;
+    border-top: 2px solid grey;
+    width: 80vw;
+    box-sizing: border-box;
+    margin: -2px;
+}
+.user_name {
+    font-weight: bold;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+    background: rgb(0, 0, 0);
+    color: white;
+    
+  }
+  footer div {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  footer table td {
+    color: white;
+  }
+  footer table th, td {
+    padding: 10px;
+  }
+  footer table th, td a {
+    color: white;
+  }
+  footer #switch_lang {
+    width: 100px;
+    height: 50px;
+    color: white;
+    background: #000;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  footer p {
+    font-weight: bold;
+    text-align: center;
+  }

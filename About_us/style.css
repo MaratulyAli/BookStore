@@ -1,0 +1,321 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+  }
+  #main_text {
+    height: 80vh;
+    width: 60vw;
+    text-align: center;
+  }
+  body {
+    margin: 0;
+  }
+  * {
+    font-family: "Ubuntu", sans-serif;
+  }
+  body {
+    margin: 0;
+  }
+  a {text-decoration: none;}
+  #main_logo {
+    width: 20vw;
+  }
+  header#header_with_search_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: black;
+    position: relative;
+  }
+  #search {
+    height: 40px;
+    width: 40vw;
+    border: 0px solid gray;
+    border-radius: 5px 0px 0px 5px;
+    padding: 10px;
+    font-size: x-large;
+  }
+  #search_bar_and_logo {
+    display: flex;
+    align-items: center;
+  }
+  #search_logo {
+    padding: 15px;  
+    border-radius: 0px 5px 5px 0px;
+    background: linear-gradient(
+      70deg,
+      rgba(0, 255, 209, 1) 24%,
+      rgba(71, 127, 255, 1) 100%
+    );
+  }
+  #sign_in {
+    height: 55px;
+    min-width: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    position: relative;
+    right: 2vw;
+    font-size: large;
+    font-weight: bold;
+    background-image: linear-gradient(
+      70deg,
+      rgba(0, 255, 209, 1) 24%,
+      rgba(71, 127, 255, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 3s infinite ease-in;
+    border: 3px solid;
+    border-radius: 8px;
+    border-image: linear-gradient(
+      70deg,
+      rgba(0, 255, 209, 1) 24%,
+      rgba(71, 127, 255, 1) 100%
+    );
+    border-image-slice: 1;
+  }
+  #sign_in:hover {
+    cursor: pointer;
+  }
+  @-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+  
+    to {
+      -webkit-filter: hue-rotate(360deg);
+    }
+  }
+  #shopping_cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 5vw;
+  }
+  #shopping_cart p {
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+  }
+  #shopping_cart div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vw;
+  }
+  nav#navbar {
+    display: flex;
+    align-items: center;
+    background: black;
+    justify-content: space-around;
+    box-shadow: 1px 1px 30px 2px rgba(0, 0, 0, 0.733);
+  }
+  nav#navbar p {
+    font-size: large;
+  }
+  nav#navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  nav#navbar a#home::after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(
+      70deg,
+      rgba(0, 255, 209, 1) 24%,
+      rgba(71, 127, 255, 1) 100%
+    );
+  }
+  nav#navbar a::after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(
+      70deg,
+      rgba(0, 255, 209, 1) 24%,
+      rgba(71, 127, 255, 1) 100%
+    );
+    transition: width 0.4s ease-in-out;
+  }
+  nav#navbar a:hover::after {
+    width: 100%;
+  }
+  h2 {
+    margin: 3vw 5vw;
+  }
+  #genres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 5vh 2vw;
+    padding-top: 2vh;
+    border-bottom: 1px solid rgb(223, 221, 221);
+  }
+  .genre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .genre img {
+    border-radius: 100px;
+  }
+  .genre img:hover {
+    box-shadow: 0px 2px 41px 1px rgba(0, 0, 0, 0.2);
+  }
+  #main_content {
+    display: flex;
+  }
+  #side_bar {
+    padding: 1vw;
+    border-right: 1px solid rgb(223, 221, 221);
+  }
+  .price_input {
+    height: 20px;
+    width: 45px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  #price_div button {
+    height: 32px;
+    width: 50px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  #books_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 200px;
+    max-height: 505px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    padding: 15px;
+    margin: 15px 8px;
+    border-radius: 10px;
+  }
+  .item .image {
+    width: 200px;
+    height: 280px;
+  }
+  .item .title {
+    margin: 5px;
+    margin-top: 0;
+  }
+  .item .book_ratings {
+    width: 120px;
+  }
+  .item .discount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10px;
+    top: 270px;
+    background: deeppink;
+    color: white;
+    width: 70px;
+    height: 30px;
+    border-radius: 4px;
+  }
+  .item .price {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-indent: 5px;
+  }
+  .item .add_to_cart {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+    background-image: linear-gradient(
+      70deg,
+      rgba(0, 255, 209, 1) 24%,
+      rgba(71, 127, 255, 1) 100%
+    );
+    color: #000;
+    cursor: pointer;
+  }
+  .item .add_to_cart:hover {
+  
+    background-image: linear-gradient(
+      70deg,
+      rgb(0, 216, 176) 24%,
+      rgb(63, 108, 212) 100%
+      );
+    }
+  #back_to_top {
+    background: rgb(78, 78, 78);
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+  }
+  #back_to_top:hover {
+    background: rgb(109, 109, 109);
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+    background: rgb(0, 0, 0);
+    color: white;
+    
+  }
+  footer div {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  footer table td {
+    color: white;
+  }
+  footer table th, td {
+    padding: 10px;
+  }
+  footer table th, td a {
+    color: white;
+  }
+  footer #switch_lang {
+    width: 100px;
+    height: 50px;
+    color: white;
+    background: #000;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  footer p {
+    font-weight: bold;
+    text-align: center;
+  }
+  @media only screen and (max-width:500px) {
+    #genres {
+      flex-direction: column;
+    }
+    .genre img {
+      display: none;
+    }
+    #shopping_cart {
+      right:0;
+    }
+    
+  }
